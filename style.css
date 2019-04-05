@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'TitilliumWeb';
+  src: url('assets/fonts/TitalliumWeb/titilliumweb.ttf');
+  font-family: 'Maven Pro Regular';
+  src: url('assets/fonts/Maven Pro Regular.otf');
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 150px 2389px 602px;
+  font-family: "TitilliumWeb", "AdobeInvisFont", "MyriadPro-Regular";
+}
+
+p {
+  margin: 0;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+.main-image {
+  width: 100vw;
+  position: inherit;
+  z-index: 10;
+  background-image: url(./assets/img/mainImage.png);
+  height: 988px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.header, .main, .footer {
+  z-index: 15;
+  position: relative;
+}
+
+.header {
+  height: 150px;
+  display: grid;
+  grid-template-rows: 110px 40px;
+}
+
+.header .first-line, .header .second-line {
+  display: flex;
+  padding-left: 200px;
+  align-items: flex-end;
+}
+
+.header .second-line {
+  align-items: flex-start;
+}
+
+.logo {
+  position: relative;
+  width: 25%;
+}
+
+.menu {
+  width: 75%;
+  text-align: right;
+  padding-right: 200px;
+}
+
+.logo p, .logo span {
+  width: 157px;
+  height: 22px;
+  color: #858688;
+  font-family: "Titillium Web";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.logo span {
+  color: #5a4194;
+}
+
+.menu .nav {
+  width: 650px;
+  height: 40px;
+  color: #454545;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: auto;
+  margin-bottom: 0;
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+.menu img {
+  padding-left: 70px;
+  height: 16px;
+  color: #5a4194;
+}
+
+a.button-login {
+  font-family: "FontAwesome", "TitilliumWeb-Bold", "TitilliumWeb-Regular", "AdobeInvisFont", "MyriadPro-Regular";
+  color: #454545;
+  text-decoration: none;
+  width: 94px;
+  height: 40px;
+  text-align: right;
+  font-weight: bold;
+  padding: 0 20px 0 5px;
+}
+
+a.button-login:hover {
+  background: rgb(53, 167, 110);
+}
+
+a.button-login:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+a.button {
+  font-family: "FontAwesome", "TitilliumWeb-Bold", "TitilliumWeb-Regular", "AdobeInvisFont", "MyriadPro-Regular";
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, #582c7e, #8596d1);
+  text-align: right;
+  border-radius: 22px;
+  padding: 12px 20px;
+  border: none;
+}
+
+a.button:hover {
+  background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 740px 563px 128px 958px;
+}
